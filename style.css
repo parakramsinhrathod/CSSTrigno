@@ -1,0 +1,194 @@
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: black;
+}
+
+.parent {
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: lightblue;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle {
+  --size: 25px;
+  --offset: 100px;
+  position: absolute;
+  top: calc(var(--size)/2);
+  left: calc(var(--size)/2);
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: orangered;
+  -webkit-transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
+          transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
+  -webkit-animation: move 5s ease-in-out alternate infinite;
+          animation: move 5s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes move {
+  to {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+}
+
+@keyframes move {
+  to {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+}
+
+.circle:nth-child(1) {
+  --degrees: 0 * 360deg / 12;
+}
+
+.circle:nth-child(2) {
+  --degrees: 1 * 360deg / 12;
+}
+
+.circle:nth-child(3) {
+  --degrees: 2 * 360deg / 12;
+}
+
+.circle:nth-child(4) {
+  --degrees: 3 * 360deg / 12;
+}
+
+.circle:nth-child(5) {
+  --degrees: 4 * 360deg / 12;
+}
+
+.circle:nth-child(6) {
+  --degrees: 5 * 360deg / 12;
+}
+
+.circle:nth-child(7) {
+  --degrees: 6 * 360deg / 12;
+}
+
+.circle:nth-child(8) {
+  --degrees: 7 * 360deg / 12;
+}
+
+.circle:nth-child(9) {
+  --degrees: 8 * 360deg / 12;
+}
+
+.circle:nth-child(10) {
+  --degrees: 9 * 360deg / 12;
+}
+
+.circle:nth-child(11) {
+  --degrees: 10 * 360deg / 12;
+}
+
+.circle:nth-child(12) {
+  --degrees: 11 * 360deg / 12;
+}
+
+.parent2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle2 {
+  --size: 25px;
+  --offset: 100px;
+  top: calc(var(--size)/2);
+  left: calc(var(--size)/2);
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: orangered;
+  -webkit-animation: rise 5s ease-in-out alternate infinite;
+          animation: rise 5s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes rise {
+  to {
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
+  }
+}
+
+@keyframes rise {
+  to {
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
+  }
+}
+
+.circle2:nth-of-type(1) {
+  -webkit-animation-delay: calc(sin(50deg) * 1s);
+          animation-delay: calc(sin(50deg) * 1s);
+}
+
+.circle2:nth-of-type(2) {
+  -webkit-animation-delay: calc(sin(50deg) * 2s);
+          animation-delay: calc(sin(50deg) * 2s);
+}
+
+.circle2:nth-of-type(3) {
+  -webkit-animation-delay: calc(sin(50deg) * 3s);
+          animation-delay: calc(sin(50deg) * 3s);
+}
+
+.circle2:nth-of-type(4) {
+  -webkit-animation-delay: calc(sin(50deg) * 4s);
+          animation-delay: calc(sin(50deg) * 4s);
+}
+
+.circle2:nth-of-type(5) {
+  -webkit-animation-delay: calc(sin(50deg) * 5s);
+          animation-delay: calc(sin(50deg) * 5s);
+}
+
+.circle2:nth-of-type(6) {
+  -webkit-animation-delay: calc(sin(50deg) * 6s);
+          animation-delay: calc(sin(50deg) * 6s);
+}
+
+.circle2:nth-of-type(7) {
+  -webkit-animation-delay: calc(sin(50deg) * 7s);
+          animation-delay: calc(sin(50deg) * 7s);
+}
+
+.circle2:nth-of-type(8) {
+  -webkit-animation-delay: calc(sin(50deg) * 8s);
+          animation-delay: calc(sin(50deg) * 8s);
+}
+
+.circle2:nth-of-type(9) {
+  -webkit-animation-delay: calc(sin(50deg) * 9s);
+          animation-delay: calc(sin(50deg) * 9s);
+}
+
+.circle2:nth-of-type(10) {
+  -webkit-animation-delay: calc(sin(50deg) * 10s);
+          animation-delay: calc(sin(50deg) * 10s);
+}
+
+.circle2:nth-of-type(11) {
+  -webkit-animation-delay: calc(sin(50deg) * 11s);
+          animation-delay: calc(sin(50deg) * 11s);
+}
+
+.circle2:nth-of-type(12) {
+  -webkit-animation-delay: calc(sin(50deg) * 12s);
+          animation-delay: calc(sin(50deg) * 12s);
+}
+/*# sourceMappingURL=style.css.map */
